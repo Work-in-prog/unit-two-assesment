@@ -16,8 +16,8 @@ return (
             <li>
                 {`${task.task} ${
                 task.complete === false
-                    ?  "not Complete"
-                    :  "Complete"
+                    ?  "Complete"
+                    :  " Not Complete"
                 }`}
                 <form action={`/todo/${task._id}?_method=DELETE`} method="POST">
                 <input type="submit" value="DELETE" />
